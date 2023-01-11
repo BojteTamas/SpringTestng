@@ -9,14 +9,11 @@ public class Test1 extends BaseTest {
 @Autowired FirstComponent firstComponent;
 
   @Test
-  @DirtiesContext(methodMode = MethodMode.BEFORE_METHOD)
-
   public void test1() {
     System.out.println("**************");
     System.out.println(firstComponent);
   }
   @Test
-  @DirtiesContext(methodMode = MethodMode.BEFORE_METHOD)
   public void test2() {
     System.out.println("**************");
     System.out.println(firstComponent);

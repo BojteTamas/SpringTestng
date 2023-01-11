@@ -9,7 +9,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 @SpringBootTest(classes = {SpringConfig.class, DemoApplication.class})
-@DirtiesContext(classMode = ClassMode.AFTER_EACH_TEST_METHOD)
 public class BaseTest extends AbstractTestNGSpringContextTests {
 
   @BeforeClass(alwaysRun = true)
